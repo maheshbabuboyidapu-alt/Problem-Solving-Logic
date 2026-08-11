@@ -11,7 +11,7 @@ elif h>2 and h<=5:
 elif h>5:
     h-=5
     o=m*h
-    rate+=o+60+30
+    rate+=o+60
     if rate >200:
         p=rate/100*10
         rate-=p
