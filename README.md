@@ -59,7 +59,7 @@ Building strong logical thinking and problem-solving foundation before diving in
 - **Current Focus:** Problem-solving logic + Python fundamentals + DSA on mobile
 - **Next Phase (Mar 2027):** Diploma completion → Unlimited time for advanced skills
 - **Aug 2027 onward:** Laptop available → Internship prep → Full-stack development
-- **By 2030:** ₹24 LPA placement via TCS/Infosys/Wipro tier companies
+- **By 2030:** ₹24 LPA placement via product based companies 
 
 ## Problem-Solving Approach
 
