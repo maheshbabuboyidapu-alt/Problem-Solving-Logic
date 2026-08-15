@@ -1,87 +1,231 @@
 # Problem Solving & Logic Solutions
 
-Building strong logical thinking and problem-solving foundation before diving into Data Structures & Algorithms.
+Building a strong logical thinking and problem-solving foundation before diving into Data Structures & Algorithms.
+
+---
 
 ## About Me
 
-- **Student:** Diploma in Computer Science Engineering (CSE), 5th Semester
-- **Goal:** Full-stack developer targeting ₹24 LPA placement by 2030
-- **Current Status:** Learning on mobile (OPPO A38) using Pydroid 3
-- **Motivation:** Break family poverty cycle through coding excellence
+* **Student:** Diploma in Computer Science Engineering (CSE), 5th Semester
+* **Goal:** Full-Stack Developer targeting **₹24 LPA+** product-based company placement by **2030**
+* **Current Setup:** Learning entirely on an **OPPO A38** using **Pydroid 3**
+* **Motivation:** Build a strong career through consistent learning and break my family's poverty cycle through software engineering.
 
-## Constraints & Approach
+---
 
-- **Device:** Mobile only (no laptop yet, planning to acquire by end of December 2026)
-- **Strategy:** Building strong logical foundation first, then scaling with better tools
-- **Philosophy:** Quality over speed; understanding over copying
-- **Current Phase:** Problem-solving & logic (Phase 1), Real DSA coming after data structures mastery
+## Constraints & Learning Approach
+
+* **Primary Device:** Mobile phone (Laptop planned by the end of **December 2026**)
+* **Current Strategy:** Strengthen programming logic before starting advanced DSA
+* **Learning Philosophy:**
+
+  * Understand before memorizing
+  * Quality over speed
+  * Build everything independently
+  * Write clean, maintainable code
+
+---
 
 ## Problems Solved
 
-1. **Parking Fee Calculator** - Tiered pricing with conditional logic
-   - Draft version: First attempt
-   - Professional version: Optimized
-   - Status: ✅ Completed (10/10 logic)
+### 1. Parking Fee Calculator
 
-2. **Bank Interest Calculator** - Multi-tier calculations with stacked conditions
-   - Draft version: First attempt
-   - Professional version: Optimized
-   - Status: ✅ Completed (10/10 logic)
+**Concepts Covered**
 
-3. **Movie Theater Ticket Pricing** - Complex multi-tier discount system with validation
-   - Draft version: First attempt
-   - Professional version: Optimized with comments & input validation
-   - Status: ✅ Completed (10/10 logic)
+* Tiered pricing
+* Conditional logic
+* Input validation
 
-4. **E-Commerce Discount & Shipping Calculator** - Stacked discounts with conditional logic
-   - Draft version: First attempt with validation
-   - Professional version: Optimized with comments & validation
-   - Status: ✅ Completed (10/10 logic)
+**Status:** ✅ Completed (10/10 Logic)
 
-5. **Library Fine Calculator** - Tiered fines with multipliers and discounts
-   - Draft version: First attempt with validation
-   - Professional version: Full documentation, PEP 8 formatting, renamed variables
-   - Status: ✅ Completed (10/10 logic)
+---
 
-6. **Restaurant Bill Calculator** - Tiered taxes, stacked discounts, and flexible tips
-   - Draft version: First attempt with validation
-   - Professional version: Full documentation, PEP 8 formatting, input validation
-   - Status: ✅ Completed (10/10 logic)
+### 2. Bank Interest Calculator
 
-7. **Employee Salary & Bonus Calculator** - Four-layer stacked calculation (base, bonus, penalty, tax)
-   - Draft version: First attempt with validation
-   - Professional version: Full documentation, PEP 8 formatting, deliberate if/elif/else structure
-   - Status: ✅ Completed (10/10 logic)
+**Concepts Covered**
+
+* Multi-tier calculations
+* Interest slabs
+* Nested conditional statements
+
+**Status:** ✅ Completed (10/10 Logic)
+
+---
+
+### 3. Movie Theater Ticket Pricing
+
+**Concepts Covered**
+
+* Age-based pricing
+* Multiple discounts
+* Input validation
+* Complex decision making
+
+**Status:** ✅ Completed (10/10 Logic)
+
+---
+
+### 4. E-Commerce Discount & Shipping Calculator
+
+**Concepts Covered**
+
+* Stacked discounts
+* Shipping calculations
+* Conditional logic
+* Validation
+
+**Status:** ✅ Completed (10/10 Logic)
+
+---
+
+### 5. Library Fine Calculator
+
+**Concepts Covered**
+
+* Tiered fine calculation
+* Membership discounts
+* Multipliers
+* Clean program structure
+
+**Status:** ✅ Completed (10/10 Logic)
+
+---
+
+### 6. Restaurant Bill Calculator
+
+**Concepts Covered**
+
+* Taxes
+* Discounts
+* Tips
+* Multi-stage calculations
+
+**Status:** ✅ Completed (10/10 Logic)
+
+---
+
+### 7. Employee Salary & Bonus Calculator
+
+**Concepts Covered**
+
+* Experience-based salary
+* Performance bonus
+* Attendance penalty
+* Tax calculation
+* Multi-layer business logic
+
+**Status:** ✅ Completed (10/10 Logic)
+
+---
+
+### 8. Employee Overtime & Night Shift Pay Calculator
+
+**Concepts Covered**
+
+* Regular pay calculation
+* Overtime calculation with capped hours
+* Day-based overtime multipliers
+* Night shift bonus
+* Input validation
+* Dictionary lookups
+* Professional program documentation
+
+**Status:** ✅ Completed (10/10 Logic)
+
+---
+
+## Skills Strengthened
+
+Throughout these problems, I have practiced:
+
+* Input validation
+* Conditional statements (`if`, `elif`, `else`)
+* Nested decision making
+* Mathematical calculations
+* Business rule implementation
+* Multi-step logic building
+* Variables and constants
+* Dictionaries
+* Code optimization
+* Program documentation
+* Clean formatting (PEP 8 style)
+* Professional code organization
+
+---
 
 ## Learning Progress
 
-- **Timeline:** Learning to code for 4 months (started July 2026)
-- **Current Focus:** Problem-solving logic + Python fundamentals + DSA on mobile
-- **Next Phase (Mar 2027):** Diploma completion → Unlimited time for advanced skills
-- **Aug 2027 onward:** Laptop available → Internship prep → Full-stack development
-- **By 2030:** ₹24 LPA placement via product based companies 
+* **Learning to code since:** July 2026
+* **Current Focus:**
 
-## Problem-Solving Approach
+  * Python Fundamentals
+  * Problem Solving
+  * Logical Thinking
+  * Preparing for Data Structures & Algorithms
 
-- Read problem thoroughly → Understand all conditions
-- Break into logical blocks → Handle each independently
-- Validate inputs → Ensure data quality
-- Calculate step-by-step → Show breakdown of every calculation
-- Optimize → Reduce repetition, improve readability
-- Document → Add comments and professional structure
+### Roadmap
 
-## Status
+**Phase 1 (Current)**
 
-Currently solving problem-solving challenges daily while studying for 5th semester exams.
-Building strong logical foundation on mobile before diving into actual Data Structures & Algorithms.
-Working toward 10-problem milestone to demonstrate consistency and readiness for DSA mastery.
-7 of 10 problems complete. Ready to scale exponentially once laptop is acquired and DSA phase begins.
+* Complete 10 logic-building problems
+* Strengthen Python fundamentals
+* Build problem-solving confidence
+
+**Phase 2 (2027)**
+
+* Master Data Structures
+* Learn Algorithms
+* Solve LeetCode and CodeChef problems
+* Build Full-Stack projects
+
+**Phase 3 (2028–2030)**
+
+* Advanced DSA
+* System Design fundamentals
+* Production-ready Full-Stack applications
+* Internship preparation
+* Product-based company placement
+
+---
+
+## Problem-Solving Workflow
+
+For every project, I follow the same structured approach:
+
+1. Read and understand the problem statement.
+2. Identify all conditions and business rules.
+3. Validate every user input.
+4. Break the solution into logical steps.
+5. Calculate each section independently.
+6. Optimize the implementation.
+7. Improve readability with meaningful variable names.
+8. Add comments and documentation.
+9. Format according to professional coding standards.
+
+---
+
+## Current Milestone
+
+* ✅ Problems Completed: **8 / 10**
+* 🎯 Next Goal: Complete the remaining **2 logic challenges** before beginning intensive Data Structures & Algorithms practice.
+
+---
 
 ## Notes for Recruiters
 
-- All code written independently on mobile device
-- Commit dates prove authentic problem-solving journey
-- Mobile constraint = Extra challenge = Faster skill growth
-- Phase 1: Logic foundation (targeting 10 problems by Dec 2026)
-- Phase 2: Real DSA + Full-stack projects (2027-2030)
-- By 2030: Production-ready portfolio with deployed projects
+* Every solution is written independently.
+* All projects are developed entirely on a mobile device.
+* Git commit history reflects my genuine learning journey.
+* Mobile-only development has strengthened my problem-solving discipline and adaptability.
+* This repository represents my foundation-building phase before advanced DSA and full-stack development.
+
+### Future Roadmap
+
+* **2026:** Complete logic-building projects
+* **2027:** Master DSA and build full-stack applications
+* **2028–2029:** Develop production-ready portfolio projects
+* **2030:** Secure a Full-Stack Software Engineer role at a product-based company with a target package of **₹24 LPA+**
+
+---
+
+> **"Strong logic builds strong programmers. This repository documents my journey from learning programming fundamentals on a mobile phone to becoming a professional software engineer."**
