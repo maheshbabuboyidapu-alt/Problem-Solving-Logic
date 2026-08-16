@@ -206,8 +206,8 @@ For every project, I follow the same structured approach:
 
 ## Current Milestone
 
-* ✅ Problems Completed: **8 / 10**
-* 🎯 Next Goal: Complete the remaining **2 logic challenges** before beginning intensive Data Structures & Algorithms practice.
+* ✅ Problems Completed: **10 / 10**
+* 🎯 Next Goal: Data Structures & Algorithms practice.
 
 ---
 
