@@ -78,8 +78,8 @@ price -= g_dis
 print(f"Price after group discount: ${price}")
 
 # Adding 5% based on membership
-m_dis = None
-if m == "Yes":
+m_dis = 0
+if m.lower() == "yes":
     m_dis = price * per5
     price -= m_dis
     print(f"Membership discount: {per_5}% = ${m_dis}")

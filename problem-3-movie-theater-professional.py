@@ -146,8 +146,8 @@ print(f"Price after group discount: ${price}")
 # Step 4: Apply Membership Discount
 # -------------------------------
 
-m_dis = None
-if m == "Yes":
+m_dis = 0
+if m.lower() == "yes":
     m_dis = price * per5
     price -= m_dis
     print(f"Membership discount: {per_5}% = ${m_dis}")
