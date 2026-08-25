@@ -1,28 +1,48 @@
 # Problem Solving & Logic Solutions
 
-Building a strong logical thinking and problem-solving foundation before diving into Data Structures & Algorithms.
+Building a strong problem-solving and logical-thinking foundation before moving into Data Structures & Algorithms.
+
+This repository documents my early programming journey, from solving my first timed Python problem on a mobile phone to developing a structured approach to solving programming problems.
 
 ---
 
 ## About Me
 
 * **Student:** Diploma in Computer Science Engineering (CSE), 5th Semester
-* **Goal:** Full-Stack Developer targeting **₹24 LPA+** product-based company placement by **2030**
-* **Current Setup:** Learning entirely on an **OPPO A38** using **Pydroid 3**
-* **Motivation:** Build a strong career through consistent learning and break my family's poverty cycle through software engineering.
+* **Goal:** Become a Full-Stack Software Engineer and target a **₹24 LPA+** product-based company placement by **2030**
+* **Started Learning Programming:** July 2026
+* **Initial Setup:** OPPO A38 + Pydroid 3
+* **Current Focus:** Python fundamentals, problem solving, logical thinking, and preparation for DSA
 
 ---
 
-## Constraints & Learning Approach
+## How This Journey Started
 
-* **Primary Device:** Mobile phone (Laptop planned by the end of **December 2026**)
-* **Current Strategy:** Strengthen programming logic before starting advanced DSA
-* **Learning Philosophy:**
+My problem-solving journey started with a challenge from my brother.
 
-  * Understand before memorizing
-  * Quality over speed
-  * Build everything independently
-  * Write clean, maintainable code
+He had experienced coding problems during placement tests and gave me a simple challenge:
+
+> **Solve a programming problem within 30 minutes.**
+
+At that time, I had been learning Python for only about **15 days**.
+
+I accepted the challenge and solved my first parking-fee problem in approximately **20 minutes**.
+
+That first problem became the starting point of this repository.
+
+I created this GitHub repository to maintain consistency, track my progress, and publicly document my learning journey.
+
+---
+
+## My Learning Environment
+
+I initially completed my programming practice entirely on an **OPPO A38 using Pydroid 3**.
+
+The small screen and mobile keyboard made coding more difficult than working on a computer, but I continued practicing with the tools available to me.
+
+Later, I got access to a laptop, which made development much easier and opened the door to larger projects and technologies.
+
+This repository mainly represents the **foundation-building stage of my programming journey**.
 
 ---
 
@@ -35,8 +55,12 @@ Building a strong logical thinking and problem-solving foundation before diving 
 * Tiered pricing
 * Conditional logic
 * Input validation
+* Time-based calculation
 
-**Status:** ✅ Completed (10/10 Logic)
+**Status:** ✅ Completed
+
+**Learning Note:**
+This was the first problem I solved independently as part of my 30-minute challenge.
 
 ---
 
@@ -47,8 +71,9 @@ Building a strong logical thinking and problem-solving foundation before diving 
 * Multi-tier calculations
 * Interest slabs
 * Nested conditional statements
+* Input validation
 
-**Status:** ✅ Completed (10/10 Logic)
+**Status:** ✅ Completed
 
 ---
 
@@ -61,7 +86,7 @@ Building a strong logical thinking and problem-solving foundation before diving 
 * Input validation
 * Complex decision making
 
-**Status:** ✅ Completed (10/10 Logic)
+**Status:** ✅ Completed
 
 ---
 
@@ -73,8 +98,9 @@ Building a strong logical thinking and problem-solving foundation before diving 
 * Shipping calculations
 * Conditional logic
 * Validation
+* Multi-step calculations
 
-**Status:** ✅ Completed (10/10 Logic)
+**Status:** ✅ Completed
 
 ---
 
@@ -85,9 +111,9 @@ Building a strong logical thinking and problem-solving foundation before diving 
 * Tiered fine calculation
 * Membership discounts
 * Multipliers
-* Clean program structure
+* Structured calculations
 
-**Status:** ✅ Completed (10/10 Logic)
+**Status:** ✅ Completed
 
 ---
 
@@ -100,7 +126,7 @@ Building a strong logical thinking and problem-solving foundation before diving 
 * Tips
 * Multi-stage calculations
 
-**Status:** ✅ Completed (10/10 Logic)
+**Status:** ✅ Completed
 
 ---
 
@@ -114,7 +140,7 @@ Building a strong logical thinking and problem-solving foundation before diving 
 * Tax calculation
 * Multi-layer business logic
 
-**Status:** ✅ Completed (10/10 Logic)
+**Status:** ✅ Completed
 
 ---
 
@@ -123,109 +149,200 @@ Building a strong logical thinking and problem-solving foundation before diving 
 **Concepts Covered**
 
 * Regular pay calculation
-* Overtime calculation with capped hours
+* Overtime calculation
+* Capped overtime hours
 * Day-based overtime multipliers
-* Night shift bonus
+* Night-shift bonus
 * Input validation
 * Dictionary lookups
-* Professional program documentation
-
-**Status:** ✅ Completed (10/10 Logic)
-
----
-
-## Skills Strengthened
-
-Throughout these problems, I have practiced:
-
-* Input validation
-* Conditional statements (`if`, `elif`, `else`)
-* Nested decision making
-* Mathematical calculations
-* Business rule implementation
-* Multi-step logic building
-* Variables and constants
-* Dictionaries
-* Code optimization
 * Program documentation
-* Clean formatting (PEP 8 style)
-* Professional code organization
+
+**Status:** ✅ Completed
 
 ---
 
-## Learning Progress
+## Skills Practiced
 
-* **Learning to code since:** July 2026
-* **Current Focus:**
+Through these problems, I have practiced:
 
-  * Python Fundamentals
-  * Problem Solving
-  * Logical Thinking
-  * Preparing for Data Structures & Algorithms
+* Python fundamentals
+* Variables and constants
+* `if`, `elif`, and `else`
+* Nested conditional logic
+* Input validation
+* Mathematical calculations
+* Business-rule implementation
+* Multi-step problem solving
+* Dictionaries
+* Code organization
+* Readability and meaningful variable names
+* Documentation and comments
+* PEP 8-style formatting
 
-### Roadmap
+---
 
-**Phase 1 (Current)**
+## My Problem-Solving Workflow
 
-* Complete 10 logic-building problems
+I am developing a structured workflow for solving programming problems:
+
+```text
+Understand the problem
+        ↓
+Identify requirements and conditions
+        ↓
+Validate inputs
+        ↓
+Break the problem into smaller steps
+        ↓
+Design the logic
+        ↓
+Implement the solution
+        ↓
+Test with different cases
+        ↓
+Debug mistakes
+        ↓
+Improve readability
+        ↓
+Document the solution
+```
+
+My main goal is not simply to make a program run.
+
+I want to understand **why the solution works**.
+
+---
+
+## AI-Assisted Learning Transparency
+
+This repository also reflects an important part of my learning journey.
+
+**Problem 1 was solved independently by me** as my original 30-minute challenge.
+
+For the later problems, I used **Claude AI as part of the learning and problem-generation process**.
+
+I am documenting this because I want this repository to accurately represent how I learned instead of claiming that every problem was created and completed without AI assistance.
+
+My long-term goal is to gradually increase the amount of independent problem solving I can do without relying on AI for the core logic.
+
+---
+
+## Why I Created This Repository
+
+I created this repository for three reasons:
+
+### 1. Consistency
+
+A public repository gives me a place to continue recording my progress.
+
+### 2. Reflection
+
+I can look back at older solutions and see how my thinking and coding style improve.
+
+### 3. Accountability
+
+My GitHub history gives me a visible record of my learning journey.
+
+This repository is not intended to prove that I already know DSA or advanced software engineering.
+
+It represents the **foundation I am building before entering advanced problem solving**.
+
+---
+
+## Current Progress
+
+### Phase 1 — Problem Solving Foundation
+
+* ✅ Python fundamentals
+* ✅ Conditional logic
+* ✅ Input validation
+* ✅ Business-rule implementation
+* ✅ Multi-step calculations
+* ✅ 8 logic-building problems completed
+* 🎯 Complete the remaining logic-building problems
+* 🎯 Increase independent problem solving
+
+---
+
+## Roadmap
+
+### 2026 — Foundation
+
 * Strengthen Python fundamentals
-* Build problem-solving confidence
+* Complete logic-building problems
+* Improve independent problem solving
+* Learn Git and GitHub properly
+* Build small programming projects
 
-**Phase 2 (2027)**
+### 2027 — DSA + Development
 
-* Master Data Structures
+* Learn Data Structures
 * Learn Algorithms
-* Solve LeetCode and CodeChef problems
-* Build Full-Stack projects
+* Practice problem solving on platforms such as LeetCode and CodeChef
+* Strengthen JavaScript
+* Learn frontend development
+* Start backend development
+* Build full-stack projects
 
-**Phase 3 (2028–2030)**
+### 2028–2029 — Advanced Development
 
 * Advanced DSA
-* System Design fundamentals
-* Production-ready Full-Stack applications
+* Backend architecture
+* Databases
+* APIs
+* Authentication
+* Production-oriented full-stack projects
 * Internship preparation
-* Product-based company placement
+* Strong portfolio development
 
----
+### 2030 — Placement Goal
 
-## Problem-Solving Workflow
-
-For every project, I follow the same structured approach:
-
-1. Read and understand the problem statement.
-2. Identify all conditions and business rules.
-3. Validate every user input.
-4. Break the solution into logical steps.
-5. Calculate each section independently.
-6. Optimize the implementation.
-7. Improve readability with meaningful variable names.
-8. Add comments and documentation.
-9. Format according to professional coding standards.
+* Advanced DSA preparation
+* Interview preparation
+* System design fundamentals
+* Full-stack development experience
+* Target: **₹24 LPA+ product-based company placement**
 
 ---
 
 ## Current Milestone
 
-* ✅ Problems Completed: **10 / 10**
-* 🎯 Next Goal: Data Structures & Algorithms practice.
+**Problems completed: 8 / 10**
+
+The next milestone is to finish the remaining logic-building problems and then gradually move toward **Data Structures & Algorithms**.
 
 ---
 
-## Notes for Recruiters
+## What This Repository Represents
 
-* Every solution is written independently.
-* All projects are developed entirely on a mobile device.
-* Git commit history reflects my genuine learning journey.
-* Mobile-only development has strengthened my problem-solving discipline and adaptability.
-* This repository represents my foundation-building phase before advanced DSA and full-stack development.
+This repository represents the beginning of my programming journey.
 
-### Future Roadmap
+I started with a mobile phone, limited tools, and basic Python knowledge.
 
-* **2026:** Complete logic-building projects
-* **2027:** Master DSA and build full-stack applications
-* **2028–2029:** Develop production-ready portfolio projects
-* **2030:** Secure a Full-Stack Software Engineer role at a product-based company with a target package of **₹24 LPA+**
+The important part was not having the perfect setup.
+
+It was continuing to learn, solve problems, make mistakes, debug them, and keep improving.
+
+From here, I want to move from:
+
+```text
+Python Fundamentals
+        ↓
+Problem Solving
+        ↓
+Data Structures & Algorithms
+        ↓
+Web Development
+        ↓
+Backend Development
+        ↓
+Full-Stack Development
+        ↓
+Software Engineering
+```
 
 ---
 
-> **"Strong logic builds strong programmers. This repository documents my journey from learning programming fundamentals on a mobile phone to becoming a professional software engineer."**
+> **"Strong logic builds strong programmers."**
+
+This repository documents the early stage of my journey from learning programming fundamentals on a mobile phone toward becoming a professional software engineer.
