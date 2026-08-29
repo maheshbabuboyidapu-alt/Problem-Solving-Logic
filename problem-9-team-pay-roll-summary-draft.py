@@ -4,7 +4,9 @@ employees = [
     {"name": "Arjun", "hours": 50, "rate": 180},
     {"name": "Divya", "hours": 40, "rate": 220},
 ]
-
+if len(employees) == 0:
+    print("No employees found.")
+    exit()
 total_payroll=0
 n_of_elements=0
 highest_pay=0
@@ -21,7 +23,7 @@ for emp in employees:
         rt_h=emp["hours"]
         rt_pay=rt_h*emp["rate"]
         salary=rt_pay
-    if salary > highest_pay :
+    if salary > highest_pay:
         highest_pay=salary
         name_of_highest=emp["name"]
     print(f'{emp["name"]}: ₹{salary:.2f}')
