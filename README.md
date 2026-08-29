@@ -1,231 +1,106 @@
-# Problem Solving & Logic Solutions
+# Problem Solving & Logic
 
-Building a strong logical thinking and problem-solving foundation before diving into Data Structures & Algorithms.
+A collection of programming problems focused on building **problem-solving ability, logical thinking, and Python fundamentals** before moving into advanced Data Structures & Algorithms.
 
----
-
-## About Me
-
-* **Student:** Diploma in Computer Science Engineering (CSE), 5th Semester
-* **Goal:** Full-Stack Developer targeting **₹24 LPA+** product-based company placement by **2030**
-* **Current Setup:** Learning entirely on an **OPPO A38** using **Pydroid 3**
-* **Motivation:** Build a strong career through consistent learning and break my family's poverty cycle through software engineering.
-
----
-
-## Constraints & Learning Approach
-
-* **Primary Device:** Mobile phone (Laptop planned by the end of **December 2026**)
-* **Current Strategy:** Strengthen programming logic before starting advanced DSA
-* **Learning Philosophy:**
-
-  * Understand before memorizing
-  * Quality over speed
-  * Build everything independently
-  * Write clean, maintainable code
-
----
-
-## Problems Solved
+## Problems
 
 ### 1. Parking Fee Calculator
 
-**Concepts Covered**
-
-* Tiered pricing
-* Conditional logic
-* Input validation
-
-**Status:** ✅ Completed (10/10 Logic)
-
----
+**Concepts:** Tiered pricing, conditional logic, input validation
 
 ### 2. Bank Interest Calculator
 
-**Concepts Covered**
-
-* Multi-tier calculations
-* Interest slabs
-* Nested conditional statements
-
-**Status:** ✅ Completed (10/10 Logic)
-
----
+**Concepts:** Interest slabs, multi-tier calculations, conditional statements
 
 ### 3. Movie Theater Ticket Pricing
 
-**Concepts Covered**
-
-* Age-based pricing
-* Multiple discounts
-* Input validation
-* Complex decision making
-
-**Status:** ✅ Completed (10/10 Logic)
-
----
+**Concepts:** Age-based pricing, discounts, validation, decision making
 
 ### 4. E-Commerce Discount & Shipping Calculator
 
-**Concepts Covered**
-
-* Stacked discounts
-* Shipping calculations
-* Conditional logic
-* Validation
-
-**Status:** ✅ Completed (10/10 Logic)
-
----
+**Concepts:** Stacked discounts, shipping calculations, conditional logic
 
 ### 5. Library Fine Calculator
 
-**Concepts Covered**
-
-* Tiered fine calculation
-* Membership discounts
-* Multipliers
-* Clean program structure
-
-**Status:** ✅ Completed (10/10 Logic)
-
----
+**Concepts:** Tiered calculations, membership discounts, multipliers
 
 ### 6. Restaurant Bill Calculator
 
-**Concepts Covered**
-
-* Taxes
-* Discounts
-* Tips
-* Multi-stage calculations
-
-**Status:** ✅ Completed (10/10 Logic)
-
----
+**Concepts:** Taxes, discounts, tips, multi-stage calculations
 
 ### 7. Employee Salary & Bonus Calculator
 
-**Concepts Covered**
-
-* Experience-based salary
-* Performance bonus
-* Attendance penalty
-* Tax calculation
-* Multi-layer business logic
-
-**Status:** ✅ Completed (10/10 Logic)
-
----
+**Concepts:** Salary calculation, performance bonus, attendance penalty, tax calculation
 
 ### 8. Employee Overtime & Night Shift Pay Calculator
 
-**Concepts Covered**
+**Concepts:** Regular pay, overtime, multipliers, night-shift bonus, validation, dictionary lookups
 
-* Regular pay calculation
-* Overtime calculation with capped hours
-* Day-based overtime multipliers
-* Night shift bonus
-* Input validation
-* Dictionary lookups
-* Professional program documentation
+### 9. Team Payroll Summary
 
-**Status:** ✅ Completed (10/10 Logic)
+**Concepts:** Loops, dictionaries, overtime calculation, aggregation, minimum/maximum values, averages
+
+### 10. Coming Soon
+
+The next problem will continue the progression toward stronger programming logic and problem-solving skills.
 
 ---
 
-## Skills Strengthened
+## What These Problems Practice
 
-Throughout these problems, I have practiced:
-
-* Input validation
-* Conditional statements (`if`, `elif`, `else`)
-* Nested decision making
+* Conditional statements
+* Loops
+* Variables and expressions
 * Mathematical calculations
-* Business rule implementation
-* Multi-step logic building
-* Variables and constants
+* Input validation
 * Dictionaries
-* Code optimization
-* Program documentation
-* Clean formatting (PEP 8 style)
-* Professional code organization
+* Business-rule implementation
+* Multi-step problem solving
+* Aggregation and statistics
+* Code readability and organization
+
+## Approach
+
+Each problem is solved by breaking the requirements into smaller logical steps:
+
+1. Understand the problem
+2. Identify the rules and conditions
+3. Determine the required inputs and outputs
+4. Build the logic step by step
+5. Test different cases
+6. Improve readability and structure
+
+## Repository Structure
+
+```text
+Problem-Solving-Logic/
+│
+├── Problem-01/
+├── Problem-02/
+├── Problem-03/
+├── Problem-04/
+├── Problem-05/
+├── Problem-06/
+├── Problem-07/
+├── Problem-08/
+├── Problem-09/
+└── README.md
+```
+
+## Purpose
+
+This repository documents a progression from basic programming logic toward more complex problem-solving.
+
+The goal is to develop a strong foundation before moving into **Data Structures, Algorithms, and larger software projects**.
+
+## Progress
+
+**Problems Completed:** 8 / 10
+
+**Current Stage:** Problem Solving & Python Fundamentals
+
+**Next Stage:** Data Structures & Algorithms
 
 ---
 
-## Learning Progress
-
-* **Learning to code since:** July 2026
-* **Current Focus:**
-
-  * Python Fundamentals
-  * Problem Solving
-  * Logical Thinking
-  * Preparing for Data Structures & Algorithms
-
-### Roadmap
-
-**Phase 1 (Current)**
-
-* Complete 10 logic-building problems
-* Strengthen Python fundamentals
-* Build problem-solving confidence
-
-**Phase 2 (2027)**
-
-* Master Data Structures
-* Learn Algorithms
-* Solve LeetCode and CodeChef problems
-* Build Full-Stack projects
-
-**Phase 3 (2028–2030)**
-
-* Advanced DSA
-* System Design fundamentals
-* Production-ready Full-Stack applications
-* Internship preparation
-* Product-based company placement
-
----
-
-## Problem-Solving Workflow
-
-For every project, I follow the same structured approach:
-
-1. Read and understand the problem statement.
-2. Identify all conditions and business rules.
-3. Validate every user input.
-4. Break the solution into logical steps.
-5. Calculate each section independently.
-6. Optimize the implementation.
-7. Improve readability with meaningful variable names.
-8. Add comments and documentation.
-9. Format according to professional coding standards.
-
----
-
-## Current Milestone
-
-* ✅ Problems Completed: **10 / 10**
-* 🎯 Next Goal: Data Structures & Algorithms practice.
-
----
-
-## Notes for Recruiters
-
-* Every solution is written independently.
-* All projects are developed entirely on a mobile device.
-* Git commit history reflects my genuine learning journey.
-* Mobile-only development has strengthened my problem-solving discipline and adaptability.
-* This repository represents my foundation-building phase before advanced DSA and full-stack development.
-
-### Future Roadmap
-
-* **2026:** Complete logic-building projects
-* **2027:** Master DSA and build full-stack applications
-* **2028–2029:** Develop production-ready portfolio projects
-* **2030:** Secure a Full-Stack Software Engineer role at a product-based company with a target package of **₹24 LPA+**
-
----
-
-> **"Strong logic builds strong programmers. This repository documents my journey from learning programming fundamentals on a mobile phone to becoming a professional software engineer."**
+> **Building logic first, then building bigger things.**
