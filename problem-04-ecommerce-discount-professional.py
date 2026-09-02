@@ -36,12 +36,14 @@ Coupon:
 # User Input
 # ---------------------------------
 
-category = input("Enter category: ").lower()
+category = input("Enter category of the product [Electronics, Clothing, Books, Groceries]: ")
 
-if category not in ["electronics", "clothing", "books", "groceries"]:
+if category.lower() != "electronics" and \
+   category.lower() != "clothing" and \
+   category.lower() != "books" and \
+   category.lower() != "groceries":
     print("Invalid category!")
     exit()
-
 order_amount = float(input("Enter order amount: "))
 
 if order_amount <= 0:

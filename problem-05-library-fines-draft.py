@@ -6,9 +6,12 @@ except ValueError:
 if d_over<0:
     print("Days overdue can't be negative")
     exit()  
-b_type=input("Enter book type:")            
+b_type = input(
+    "Enter book type [Fiction, Non-fiction, Reference]: "
+)
+
 if b_type.lower() not in ["fiction", "non-fiction", "reference"]:
-    print("Invalid booktype!")
+    print("Invalid book type!")
     exit()
 membership=input("Are you had mambership:")
 if membership.lower() not in ["premium","regular","non-member"]:

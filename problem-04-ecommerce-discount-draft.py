@@ -1,12 +1,12 @@
-category=input("Enter category of the product:")
+category = input("Enter category of the product [Electronics, Clothing, Books, Groceries]: ")
+
 if category.lower() != "electronics" and \
    category.lower() != "clothing" and \
    category.lower() != "books" and \
    category.lower() != "groceries":
-       print("Inavlid category!")
-       exit()
-       
-order_amount=int(input("Enter order amount of the product:"))
+    print("Invalid category!")
+    exit()
+order_amount=int(input("Enter order amount of the product():"))
 if order_amount==0 or order_amount<0:
     print("Invalid order amount")
     exit()
