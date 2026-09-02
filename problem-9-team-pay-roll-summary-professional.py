@@ -30,10 +30,7 @@ Payroll Summary:
 # ===============================================
 
 employees = [
-    {"name": "Ravi", "hours": 45, "rate": 200},
-    {"name": "Sita", "hours": 38, "rate": 250},
-    {"name": "Arjun", "hours": 50, "rate": 180},
-    {"name": "Divya", "hours": 40, "rate": 220},
+    
 ]
 
 # ===============================================
