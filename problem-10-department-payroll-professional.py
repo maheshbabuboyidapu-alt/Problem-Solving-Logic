@@ -39,14 +39,18 @@ employees = [
 # ===============================================
 # Step 2: Find Unique Departments
 # ===============================================
+STANDARD_HOURS = 40
 
 departments = []
+seen = set()
 
 for employee in employees:
     department = employee["department"]
 
-    if department not in departments:
+    if department not in seen:
+        seen.add(department)
         departments.append(department)
+        
 
 # Check whether employee data is available
 if len(employees) == 0:
@@ -78,9 +82,9 @@ for department in departments:
             hours_worked = employee["hours"]
             hourly_rate = employee["rate"]
 
-            if hours_worked > 40:
-                overtime_hours = hours_worked - 40
-                regular_hours = 40
+            if hours_worked > STANDARD_HOURS:
+                overtime_hours = hours_worked - STANDARD_HOURS
+                regular_hours = STANDARD_HOURS
 
                 overtime_pay = overtime_hours * (hourly_rate * 1.5)
                 regular_pay = regular_hours * hourly_rate
