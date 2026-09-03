@@ -6,12 +6,14 @@ emp = [
 ]
 mic = []
 st = 40
+seen = set()
 
 
 for e in emp:
     dip = e["department"]
 
-    if dip not in mic:
+    if dip not in seen:
+        seen.add(dip)
         mic.append(dip)
 
 
