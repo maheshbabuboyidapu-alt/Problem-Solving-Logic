@@ -1,106 +1,72 @@
-# Problem Solving & Logic
+# Problem-Solving-Logic
 
-A collection of programming problems focused on building **problem-solving ability, logical thinking, and Python fundamentals** before moving into advanced Data Structures & Algorithms.
+A record of my programming problem-solving journey in Python.
 
-## Problems
+## My Learning Approach
 
-### 1. Parking Fee Calculator
+I learn one new programming concept first. Then I test my understanding by solving multiple new, real-world problems using the concepts I have learned.
 
-**Concepts:** Tiered pricing, conditional logic, input validation
+My goal is not to collect problem numbers. My goal is to improve my reasoning, problem-solving ability, code quality, and understanding of how programming can be used to model real-world situations.
 
-### 2. Bank Interest Calculator
+### Learning Cycle
 
-**Concepts:** Interest slabs, multi-tier calculations, conditional statements
+```text
+Learn a concept
+      ↓
+Solve a new real-world problem
+      ↓
+Test my understanding
+      ↓
+Build another problem
+      ↓
+Improve my solution
+      ↓
+Document what I learned
+```
 
-### 3. Movie Theater Ticket Pricing
+## Progression
 
-**Concepts:** Age-based pricing, discounts, validation, decision making
+### Foundation — Problems 01–08
 
-### 4. E-Commerce Discount & Shipping Calculator
+I started with Python fundamentals and focused on translating real-world rules into program logic using conditional statements, calculations, input handling, and validation.
 
-**Concepts:** Stacked discounts, shipping calculations, conditional logic
+The scenarios include parking, banking, movie tickets, e-commerce, library fines, restaurant billing, employee salary, and overtime payment.
 
-### 5. Library Fine Calculator
+### Applying New Concepts — Problems 09–10
 
-**Concepts:** Tiered calculations, membership discounts, multipliers
+After learning data-oriented Python concepts such as lists and dictionaries, I began applying them to problems involving collections of employees and payroll calculations.
 
-### 6. Restaurant Bill Calculator
+I also started using reusable functions where they helped organize repeated calculations.
 
-**Concepts:** Taxes, discounts, tips, multi-stage calculations
+The purpose of this stage is to show how my solutions evolve as I learn new concepts.
 
-### 7. Employee Salary & Bonus Calculator
+## What This Repository Shows
 
-**Concepts:** Salary calculation, performance bonus, attendance penalty, tax calculation
-
-### 8. Employee Overtime & Night Shift Pay Calculator
-
-**Concepts:** Regular pay, overtime, multipliers, night-shift bonus, validation, dictionary lookups
-
-### 9. Team Payroll Summary
-
-**Concepts:** Loops, dictionaries, overtime calculation, aggregation, minimum/maximum values, averages
-
-### 10. Coming Soon
-
-The next problem will continue the progression toward stronger programming logic and problem-solving skills.
-
----
-
-## What These Problems Practice
-
-* Conditional statements
-* Loops
-* Variables and expressions
-* Mathematical calculations
-* Input validation
-* Dictionaries
-* Business-rule implementation
-* Multi-step problem solving
-* Aggregation and statistics
-* Code readability and organization
-
-## Approach
-
-Each problem is solved by breaking the requirements into smaller logical steps:
-
-1. Understand the problem
-2. Identify the rules and conditions
-3. Determine the required inputs and outputs
-4. Build the logic step by step
-5. Test different cases
-6. Improve readability and structure
+- I translate business-style requirements into program logic.
+- I practice input validation and edge-case handling.
+- I work with real-world rules such as discounts, salary calculations, taxes, overtime, and payroll.
+- I compare an initial solution with an improved/refactored solution where available.
+- I document what I learned from each problem and how my approach changes over time.
 
 ## Repository Structure
 
 ```text
 Problem-Solving-Logic/
 │
-├── Problem-01/
-├── Problem-02/
-├── Problem-03/
-├── Problem-04/
-├── Problem-05/
-├── Problem-06/
-├── Problem-07/
-├── Problem-08/
-├── Problem-09/
-└── README.md
+├── Problem-01-Parking-Fee/
+├── Problem-02-Bank-Interest/
+├── Problem-03-Movie-Theater/
+├── Problem-04-E-commerce/
+├── Problem-05-Library-Fine/
+├── Problem-06-Restaurant-Bill/
+├── Problem-07-Employee-Salary/
+├── Problem-08-Overtime-Pay/
+├── Problem-09-Team-Payroll/
+└── Problem-10-Department-Payroll/
 ```
 
-## Purpose
+Each problem contains the solution(s) and a README describing the problem, the concepts applied, my approach, and what I learned.
 
-This repository documents a progression from basic programming logic toward more complex problem-solving.
+## Long-Term Goal
 
-The goal is to develop a strong foundation before moving into **Data Structures, Algorithms, and larger software projects**.
-
-## Progress
-
-**Problems Completed:** 8 / 10
-
-**Current Stage:** Problem Solving & Python Fundamentals
-
-**Next Stage:** Data Structures & Algorithms
-
----
-
-> **Building logic first, then building bigger things.**
+I will continue this repository while I am developing my problem-solving foundation. Later, when I move into dedicated DSA practice, this repository will naturally become a record of the stage where I built my programming logic through real-world problems.
