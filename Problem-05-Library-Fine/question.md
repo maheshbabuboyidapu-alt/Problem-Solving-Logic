@@ -46,12 +46,14 @@ membership = Regular
 
 **Expected Output**
 ```text
-Base fine: ₹235.00
-Multiplier: Reference (2×) = ₹470.00
-Membership discount: 10% = −₹47.00
-After discount: ₹423.00
-Final fine: ₹423.00
+Base fine: ₹225.00
+Multiplier: Reference (2×) = ₹450.00
+Membership discount: 10% = −₹45.00
+After discount: ₹405.00
+Final fine: ₹405.00
 ```
+
+**Calculation:** 7 × ₹5 + 7 × ₹10 + 6 × ₹20 = ₹225; Reference multiplier gives ₹450; 10% membership discount gives a final fine of ₹405.
 
 ## Constraints
 
