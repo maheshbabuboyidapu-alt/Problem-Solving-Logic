@@ -24,8 +24,10 @@ h = 7
 
 **Expected Output**
 ```text
-Fee is ₹120.00
+Fee is ₹110.00
 ```
+
+**Calculation:** ₹30 + (3 × ₹20) + (2 × ₹10) = ₹110. No discount applies.
 
 ## Constraints
 
@@ -67,7 +69,7 @@ h = 7
 
 **Expected Output**
 ```text
-Fee is ₹120.00
+Fee is ₹110.00
 ```
 
 ### Test Case 4 — Boundary: calculated fee is below ₹200
