@@ -107,10 +107,10 @@ membership = Premium
 
 **Expected Output**
 ```text
-Base fine: ₹685.00
-Multiplier: 2× = ₹1370.00
-Discount: 20% = −₹274.00
-After discount: ₹1096.00
+Base fine: ₹675.00
+Multiplier: 2× = ₹1350.00
+Discount: 20% = −₹270.00
+After discount: ₹1080.00
 Final fine: ₹500.00
 ```
 
@@ -140,7 +140,7 @@ membership = Non-member
 
 **Expected Output**
 ```text
-Fine before cap: ₹1870.00
+Fine before cap: ₹925.00
 Final fine: ₹500.00
 ```
 
