@@ -40,11 +40,15 @@ I also started using reusable functions where they helped organize repeated calc
 
 The purpose of this stage is to show how my solutions evolve as I learn new concepts.
 
+### Expanding Data Processing — Problem 11
+
+Problem 11 moves from payroll records to student and subject score records. It focuses on grouping data, calculating averages, ranking results, identifying the hardest subject, and handling a failure threshold.
+
 ## What This Repository Shows
 
 - I translate business-style requirements into program logic.
 - I practice input validation and edge-case handling.
-- I work with real-world rules such as discounts, salary calculations, taxes, overtime, and payroll.
+- I work with real-world rules such as discounts, salary calculations, taxes, overtime, payroll, and score analysis.
 - I compare an initial solution with an improved/refactored solution where available.
 - I document what I learned from each problem and how my approach changes over time.
 
@@ -62,7 +66,8 @@ Problem-Solving-Logic/
 ├── Problem-07-Employee-Salary/
 ├── Problem-08-Overtime-Pay/
 ├── Problem-09-Team-Payroll/
-└── Problem-10-Department-Payroll/
+├── Problem-10-Department-Payroll/
+└── Problem-11-Student-Score-Tracker/
 ```
 
 Each problem contains the solution(s) and a README describing the problem, the concepts applied, my approach, and what I learned.
