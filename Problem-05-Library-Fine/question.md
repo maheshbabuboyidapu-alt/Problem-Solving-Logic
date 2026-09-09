@@ -142,7 +142,7 @@ membership = Non-member
 
 **Expected Output**
 ```text
-Fine before cap: ₹925.00
+Fine before cap: ₹1850.00
 Final fine: ₹500.00
 ```
 
