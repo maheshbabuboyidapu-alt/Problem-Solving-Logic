@@ -6,29 +6,154 @@ Calculate the library fine for a book returned late.
 
 ## Fine Rules
 
-- Days 1–7: ₹5 per day
-- Days 8–14: ₹10 per day for days beyond 7
-- Days 15–30: ₹20 per day for days beyond 14
-- Days 31+: ₹50 per day for days beyond 30
+The fine tiers are cumulative:
+
+- Days 1–7: ₹5 per day.
+- Days 8–14: ₹10 per day for days beyond 7.
+- Days 15–30: ₹20 per day for days beyond 14.
+- Days 31+: ₹50 per day for days beyond 30.
 
 ## Book Type Multiplier
-- Fiction: 1×
-- Non-fiction: 1.5×
-- Reference: 2×
+
+- Fiction: 1×.
+- Non-fiction: 1.5×.
+- Reference: 2×.
 
 ## Membership Discount
-- Non-member: 0%
-- Regular: 10%
-- Premium: 20%
 
-Maximum fine: ₹500.
+Applied after the book-type multiplier:
+
+- Non-member: 0%.
+- Regular: 10%.
+- Premium: 20%.
+
+## Maximum Fine
+
+The final fine is capped at ₹500.
 
 ## Input
 
 Enter days overdue, book type, and membership status.
 
+## Example
+
+**Input**
+```text
+days = 20
+book = Reference
+membership = Regular
+```
+
+**Expected Output**
+```text
+Base fine: ₹235.00
+Multiplier: Reference (2×) = ₹470.00
+Membership discount: 10% = −₹47.00
+After discount: ₹423.00
+Final fine: ₹423.00
+```
+
 ## Constraints
 
 - Days overdue must be 0 or greater.
 - Fine tiers are cumulative.
-- Final fine is capped at ₹500.
+- Apply the book-type multiplier before the membership discount.
+- Cap the final fine at ₹500.
+
+## Test Cases
+
+### Test Case 1 — Tier 1 only
+
+**Input**
+```text
+days = 5
+book = Fiction
+membership = Non-member
+```
+
+**Expected Output**
+```text
+Base fine: ₹25.00
+Multiplier: 1× = ₹25.00
+Discount: 0%
+Final fine: ₹25.00
+```
+
+### Test Case 2 — Spans tier 1 and tier 2
+
+**Input**
+```text
+days = 10
+book = Non-fiction
+membership = Regular
+```
+
+**Expected Output**
+```text
+Base fine: ₹65.00
+Multiplier: 1.5× = ₹97.50
+Discount: 10% = −₹9.75
+Final fine: ₹87.75
+```
+
+### Test Case 3 — Fine exceeds the ₹500 cap
+
+**Input**
+```text
+days = 35
+book = Reference
+membership = Premium
+```
+
+**Expected Output**
+```text
+Base fine: ₹685.00
+Multiplier: 2× = ₹1370.00
+Discount: 20% = −₹274.00
+After discount: ₹1096.00
+Final fine: ₹500.00
+```
+
+### Test Case 4 — Boundary: exactly 0 days overdue
+
+**Input**
+```text
+days = 0
+book = Fiction
+membership = Non-member
+```
+
+**Expected Output**
+```text
+Base fine: ₹0.00
+Final fine: ₹0.00
+```
+
+### Test Case 5 — Fine exceeds the cap before final output
+
+**Input**
+```text
+days = 40
+book = Reference
+membership = Non-member
+```
+
+**Expected Output**
+```text
+Fine before cap: ₹1870.00
+Final fine: ₹500.00
+```
+
+### Test Case 6 — Invalid book type
+
+**Input**
+```text
+days = 5
+book = Magazine
+membership = Regular
+```
+
+**Expected Output**
+```text
+Invalid book type!
+```
