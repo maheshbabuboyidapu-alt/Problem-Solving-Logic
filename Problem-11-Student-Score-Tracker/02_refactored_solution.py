@@ -40,40 +40,65 @@ MARKS = 2
 PASS_AVERAGE_LIMIT = 40
 
 # ===============================================
-# Step 3: Validate Records
+# Step 3: Prepare Student Records
 # ===============================================
 
-if not records:
+student_records = []
+record_keys = ("name", "subject", "marks")
+
+for record in records:
+    student_records.append(dict(zip(record_keys, record)))
+
+# Check whether student data is available
+if len(student_records) == 0:
     print("No student records found.")
     exit()
 
 # ===============================================
-# Step 4: Calculate Student Averages
+# Step 4: Find Unique Students and Subjects
 # ===============================================
 
-student_totals = {}
-student_counts = {}
+students = []
+subjects = []
 
-for record in records:
-    student = record[STUDENT_NAME]
-    marks = record[MARKS]
+for record in student_records:
+    student = record["name"]
+    subject = record["subject"]
 
-    student_totals[student] = student_totals.get(student, 0) + marks
-    student_counts[student] = student_counts.get(student, 0) + 1
+    if student not in students:
+        students.append(student)
+
+    if subject not in subjects:
+        subjects.append(subject)
+
+# ===============================================
+# Step 5: Calculate Student Averages
+# ===============================================
 
 student_averages = []
+top_student = ""
+top_score = 0
 
-for student in student_totals:
-    average = student_totals[student] / student_counts[student]
-    student_averages.append((student, round(average, 2)))
+for student in students:
+    total_marks = 0
+    subject_count = 0
+
+    for record in student_records:
+        if record["name"] == student:
+            total_marks += record["marks"]
+            subject_count += 1
+
+    average = round(total_marks / subject_count, 2)
+    student_averages.append([student, average])
+
+    if average > top_score:
+        top_score = average
+        top_student = student
 
 student_averages.sort(key=lambda item: item[1], reverse=True)
 
-# The first student has the highest average after sorting.
-top_student, top_score = student_averages[0]
-
 # ===============================================
-# Step 5: Display Student Averages
+# Step 6: Display Student Averages
 # ===============================================
 
 print("--- Student Averages ---")
@@ -84,32 +109,33 @@ for student, average in student_averages:
 print(f"\nTop Scorer:{top_student}({top_score})\n")
 
 # ===============================================
-# Step 6: Calculate Subject Averages
+# Step 7: Calculate Subject Averages
 # ===============================================
 
-subject_totals = {}
-subject_counts = {}
-
-for record in records:
-    subject = record[SUBJECT_NAME]
-    marks = record[MARKS]
-
-    subject_totals[subject] = subject_totals.get(subject, 0) + marks
-    subject_counts[subject] = subject_counts.get(subject, 0) + 1
-
 subject_averages = []
+hardest_subject = ""
+lowest_average = None
 
-for subject in subject_totals:
-    average = subject_totals[subject] / subject_counts[subject]
-    subject_averages.append((subject, round(average, 2)))
+for subject in subjects:
+    total_marks = 0
+    student_count = 0
+
+    for record in student_records:
+        if record["subject"] == subject:
+            total_marks += record["marks"]
+            student_count += 1
+
+    average = round(total_marks / student_count, 2)
+    subject_averages.append([subject, average])
+
+    if lowest_average is None or average < lowest_average:
+        lowest_average = average
+        hardest_subject = subject
 
 subject_averages.sort(key=lambda item: item[1], reverse=True)
 
-# The last subject has the lowest average after descending sorting.
-hardest_subject, lowest_average = subject_averages[-1]
-
 # ===============================================
-# Step 7: Display Subject Averages
+# Step 8: Display Subject Averages
 # ===============================================
 
 print("--- Subject Averages ---")
@@ -120,23 +146,20 @@ for subject, average in subject_averages:
 print(f"\nHardest Subject:{hardest_subject}({lowest_average})\n")
 
 # ===============================================
-# Step 8: Categorize Students by Average
+# Step 9: Categorize Students by Average
 # ===============================================
 
-passed_students = [
-    (student, average)
-    for student, average in student_averages
-    if average >= PASS_AVERAGE_LIMIT
-]
+passed_students = []
+failed_students = []
 
-failed_students = [
-    (student, average)
-    for student, average in student_averages
-    if average < PASS_AVERAGE_LIMIT
-]
+for student, average in student_averages:
+    if average >= PASS_AVERAGE_LIMIT:
+        passed_students.append([student, average])
+    else:
+        failed_students.append([student, average])
 
 # ===============================================
-# Step 9: Display Passed Students
+# Step 10: Display Passed Students
 # ===============================================
 
 print(f"--- Passed Students (Average >= {PASS_AVERAGE_LIMIT}) ---")
@@ -148,7 +171,7 @@ else:
         print(f"{student:<8}:{average}")
 
 # ===============================================
-# Step 10: Display Failed Students
+# Step 11: Display Failed Students
 # ===============================================
 
 print(f"\n--- Failed Students (Average < {PASS_AVERAGE_LIMIT}) ---")
