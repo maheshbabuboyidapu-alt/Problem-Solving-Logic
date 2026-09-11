@@ -10,6 +10,7 @@ Summary:
 - Top-scoring student
 - Subject averages in descending order
 - Subject with the lowest average score
+- Students whose average score is below 40
 """
 
 # ===============================================
@@ -17,15 +18,15 @@ Summary:
 # ===============================================
 
 records = [
-    ("Ravi", "Math", 80),
-    ("Ravi", "Science", 85),
-    ("Ravi", "English", 90),
-    ("Priya", "Math", 25),
-    ("Priya", "Science", 30),
-    ("Priya", "English", 20),
-    ("Kumar", "Math", 10),
-    ("Kumar", "Science", 15),
-    ("Kumar", "English", 12),
+    ("Ravi",   "Math",    78),
+    ("Anjali", "Math",    92),
+    ("Ravi",   "Science", 65),
+    ("Priya",  "Math",    55),
+    ("Anjali", "Science", 88),
+    ("Priya",  "Science", 40),
+    ("Ravi",   "English", 50),
+    ("Anjali", "English", 95),
+    ("Priya",  "English", 33),
 ]
 
 # ===============================================
@@ -35,6 +36,7 @@ records = [
 STUDENT_NAME = 0
 SUBJECT_NAME = 1
 MARKS = 2
+FAIL_AVERAGE_LIMIT = 40
 
 # ===============================================
 # Step 3: Validate Records
@@ -115,3 +117,25 @@ for subject, average in subject_averages:
     print(f"{subject:<8}:{average}")
 
 print(f"\nHardest Subject:{hardest_subject}({lowest_average})\n")
+
+# ===============================================
+# Step 8: Find Failed Students
+# ===============================================
+
+failed_students = [
+    (student, average)
+    for student, average in student_averages
+    if average < FAIL_AVERAGE_LIMIT
+]
+
+# ===============================================
+# Step 9: Display Failed Students
+# ===============================================
+
+print("--- Failed Students (Average < 40) ---")
+
+if not failed_students:
+    print("None")
+else:
+    for student, average in failed_students:
+        print(f"{student:<8}:{average}")
