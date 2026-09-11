@@ -1,0 +1,171 @@
+# Problem 03 — Movie Theater Ticket Pricing
+
+## Problem Statement
+
+Calculate the final price for a movie theater booking. The price is calculated per ticket and then multiplied by the number of tickets.
+
+## Rules
+
+### Age-based base price
+
+- Child (1–12): ₹150.
+- Teen (13–17): ₹200.
+- Adult (18–60): ₹300.
+- Senior (61+): ₹200.
+
+### Show-time adjustment
+
+Applied to the base price:
+
+- Matinee (10:00–16:59): −₹50.
+- Evening (17:00–20:59): +₹100.
+- Night (21:00–23:59): +₹150.
+- Times outside these ranges receive no time adjustment.
+
+### Group discount
+
+Applied to the price after the time adjustment:
+
+- Fewer than 5 tickets: 0%.
+- 5–9 tickets: 10%.
+- 10–19 tickets: 15%.
+- 20 or more tickets: 20%.
+
+### Membership discount
+
+Applied after the group discount:
+
+- Member: 5%.
+- Non-member: 0%.
+
+## Input
+
+Enter age, number of tickets, show time in 24-hour format, and membership status (Yes/No).
+
+## Example
+
+**Input**
+```text
+age = 25
+tickets = 10
+show_time = 19
+membership = Yes
+```
+
+**Expected Output**
+```text
+Base price: ₹300
+Time adjustment: +₹100
+Price after time adjustment: ₹400
+Group discount: 15% = ₹60.00
+Price after group discount: ₹340.00
+Membership discount: 5% = ₹17.00
+Final price per ticket: ₹323.00
+Total for 10 tickets: ₹3230.00
+```
+
+## Constraints
+
+- Apply discounts in this order: group discount first, then membership discount.
+- Show time is given in 24-hour format.
+- The age, ticket count, and membership values should be valid for the rules above.
+
+## Test Cases
+
+### Test Case 1 — Adult, evening, member, no group discount
+
+**Input**
+```text
+age = 25
+tickets = 3
+show_time = 18
+membership = Yes
+```
+
+**Expected Output**
+```text
+Base price: ₹300
+Time adjustment: +₹100
+After time adjustment: ₹400
+Group discount: None
+Membership discount: 5% = ₹20.00
+Final price per ticket: ₹380.00
+Total: ₹1140.00
+```
+
+### Test Case 2 — Child, matinee, group discount, no membership
+
+**Input**
+```text
+age = 10
+tickets = 8
+show_time = 14
+membership = No
+```
+
+**Expected Output**
+```text
+Base price: ₹150
+Time adjustment: −₹50
+After time adjustment: ₹100
+Group discount: 10% = ₹10.00
+Final price per ticket: ₹90.00
+Total: ₹720.00
+```
+
+### Test Case 3 — Senior, night show, large group, member
+
+**Input**
+```text
+age = 65
+tickets = 20
+show_time = 22
+membership = Yes
+```
+
+**Expected Output**
+```text
+Base price: ₹200
+Time adjustment: +₹150
+After time adjustment: ₹350
+Group discount: 20% = ₹70.00
+After group discount: ₹280.00
+Membership discount: 5% = ₹14.00
+Final price per ticket: ₹266.00
+Total: ₹5320.00
+```
+
+### Test Case 4 — Boundary: exactly 5 tickets
+
+**Input**
+```text
+age = 30
+tickets = 5
+show_time = 19
+membership = No
+```
+
+**Expected Output**
+```text
+Group discount applied: 10%
+```
+
+### Test Case 5 — Time outside all adjustment ranges
+
+**Input**
+```text
+age = 15
+tickets = 2
+show_time = 9
+membership = No
+```
+
+**Expected Output**
+```text
+Base price: ₹200
+Time adjustment: None
+Group discount: None
+Membership discount: None
+Final price per ticket: ₹200.00
+Total: ₹400.00
+```

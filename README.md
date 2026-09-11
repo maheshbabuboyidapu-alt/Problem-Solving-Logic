@@ -1,25 +1,27 @@
 # Problem-Solving-Logic
 
-A record of my programming problem-solving journey in Python.
+A structured record of my Python problem-solving practice and programming fundamentals.
 
-## My Learning Approach
+## Purpose
 
-I learn one new programming concept first. Then I test my understanding by solving multiple new, real-world problems using the concepts I have learned.
+This repository documents how I develop programming logic by learning a concept and then applying it to **new problems I have not solved before**.
 
-My goal is not to collect problem numbers. My goal is to improve my reasoning, problem-solving ability, code quality, and understanding of how programming can be used to model real-world situations.
+The goal is not to collect a large number of solved questions. The goal is to improve my reasoning, implementation, debugging, validation, data processing, and code quality over time.
 
-### Learning Cycle
+## Learning Process
 
 ```text
 Learn a concept
       ↓
-Solve a new real-world problem
+Understand the requirements
       ↓
-Test my understanding
+Design a solution
       ↓
-Build another problem
+Implement it
       ↓
-Improve my solution
+Test and debug
+      ↓
+Improve the solution
       ↓
 Document what I learned
 ```
@@ -28,25 +30,29 @@ Document what I learned
 
 ### Foundation — Problems 01–08
 
-I started with Python fundamentals and focused on translating real-world rules into program logic using conditional statements, calculations, input handling, and validation.
+Started with Python fundamentals and focused on translating real-world rules into program logic using conditions, calculations, input handling, and validation.
 
-The scenarios include parking, banking, movie tickets, e-commerce, library fines, restaurant billing, employee salary, and overtime payment.
+Examples include parking fees, banking interest, movie tickets, e-commerce discounts, library fines, restaurant billing, employee salary, and overtime payment.
 
-### Applying New Concepts — Problems 09–10
+### Data-Oriented Problems — Problems 09–10
 
-After learning data-oriented Python concepts such as lists and dictionaries, I began applying them to problems involving collections of employees and payroll calculations.
+Moved from individual calculations toward working with collections of records using lists, dictionaries, and reusable functions.
 
-I also started using reusable functions where they helped organize repeated calculations.
+These problems focus on team and department payroll calculations and show how the solutions develop as new concepts are introduced.
 
-The purpose of this stage is to show how my solutions evolve as I learn new concepts.
+### Data Processing — Problem 11
 
-## What This Repository Shows
+Applied Python to student and subject records, including grouping data, calculating averages, ranking results, identifying the hardest subject, and handling a failure threshold.
 
-- I translate business-style requirements into program logic.
-- I practice input validation and edge-case handling.
-- I work with real-world rules such as discounts, salary calculations, taxes, overtime, and payroll.
-- I compare an initial solution with an improved/refactored solution where available.
-- I document what I learned from each problem and how my approach changes over time.
+## What This Repository Demonstrates
+
+- Translating requirements into program logic
+- Working with Python fundamentals and structured data
+- Input validation and edge-case handling
+- Using lists, dictionaries, loops, functions, and data-processing techniques
+- Debugging and improving solutions independently
+- Comparing an initial approach with a refined solution where useful
+- Documenting concepts and lessons learned
 
 ## Repository Structure
 
@@ -62,11 +68,14 @@ Problem-Solving-Logic/
 ├── Problem-07-Employee-Salary/
 ├── Problem-08-Overtime-Pay/
 ├── Problem-09-Team-Payroll/
-└── Problem-10-Department-Payroll/
+├── Problem-10-Department-Payroll/
+└── Problem-11-Student-Score-Tracker/
 ```
 
-Each problem contains the solution(s) and a README describing the problem, the concepts applied, my approach, and what I learned.
+Each problem contains the solution and supporting notes describing the requirements, concepts used, approach, and lessons learned.
 
-## Long-Term Goal
+## Scope
 
-I will continue this repository while I am developing my problem-solving foundation. Later, when I move into dedicated DSA practice, this repository will naturally become a record of the stage where I built my programming logic through real-world problems.
+This repository represents the stage of my development where I am strengthening programming fundamentals and problem-solving ability through practical Python problems.
+
+As my skills grow, the repository will continue to show that progression rather than trying to hide earlier work.
