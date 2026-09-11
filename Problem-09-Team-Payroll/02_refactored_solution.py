@@ -1,21 +1,13 @@
-
 """
 Team Payroll Summary
 
 Description:
-This program calculates the total payroll for a team of employees based
-on their working hours and hourly pay rate.
+This program calculates employee salaries based on regular and overtime
+hours, then displays a summary of the team's payroll.
 
 Payroll Structure:
-
-Regular Pay:
 - Up to 40 hours: regular hourly rate
-
-Overtime Pay:
-- Hours above 40: 1.5 times the regular hourly rate
-
-Final Pay:
-- Regular Pay + Overtime Pay
+- Hours above 40: 1.5 × hourly rate
 
 Payroll Summary:
 - Individual employee salary
@@ -30,11 +22,29 @@ Payroll Summary:
 # ===============================================
 
 employees = [
-    
+    {"name": "Ravi", "hours": 45, "rate": 200},
+    {"name": "Sita", "hours": 38, "rate": 250},
+    {"name": "Arjun", "hours": 50, "rate": 180},
+    {"name": "Divya", "hours": 40, "rate": 220},
 ]
 
 # ===============================================
-# Step 2: Initialize Payroll Variables
+# Step 2: Program Constants
+# ===============================================
+
+STANDARD_HOURS = 40
+OVERTIME_MULTIPLIER = 1.5
+
+# ===============================================
+# Step 3: Validate Employee Data
+# ===============================================
+
+if not employees:
+    print("No employees found.")
+    exit()
+
+# ===============================================
+# Step 4: Initialize Payroll Variables
 # ===============================================
 
 total_payroll = 0
@@ -43,29 +53,21 @@ highest_pay = 0
 highest_paid_employee = ""
 overtime_employee_count = 0
 
-# Check whether employee data is available
-if len(employees) == 0:
-    print("No employees found.")
-    exit()
-
 # ===============================================
-# Step 3: Calculate Employee Salary
+# Step 5: Calculate Employee Salaries
 # ===============================================
 
 for employee in employees:
     hours_worked = employee["hours"]
     hourly_rate = employee["rate"]
 
-    if hours_worked > 40:
-        overtime_hours = hours_worked - 40
-        regular_hours = 40
-
-        overtime_pay = overtime_hours * (hourly_rate * 1.5)
+    if hours_worked > STANDARD_HOURS:
+        regular_hours = STANDARD_HOURS
+        overtime_hours = hours_worked - STANDARD_HOURS
         regular_pay = regular_hours * hourly_rate
+        overtime_pay = overtime_hours * hourly_rate * OVERTIME_MULTIPLIER
         salary = regular_pay + overtime_pay
-
         overtime_employee_count += 1
-
     else:
         regular_hours = hours_worked
         regular_pay = regular_hours * hourly_rate
@@ -73,10 +75,7 @@ for employee in employees:
 
     print(f'{employee["name"]}: ₹{salary:.2f}')
 
-    # ===========================================
-    # Track Highest Paid Employee
-    # ===========================================
-
+    # Track highest-paid employee
     if salary > highest_pay:
         highest_pay = salary
         highest_paid_employee = employee["name"]
@@ -85,17 +84,16 @@ for employee in employees:
     employee_count += 1
 
 # ===============================================
-# Step 4: Calculate Average Pay
+# Step 6: Calculate Average Pay
 # ===============================================
 
 average_pay = total_payroll / employee_count
 
 # ===============================================
-# Step 5: Display Payroll Summary
+# Step 7: Display Payroll Summary
 # ===============================================
 
 print(f"Total payroll: ₹{total_payroll:.2f}")
 print(f"Average pay: ₹{average_pay:.2f}")
 print(f"Highest paid: {highest_paid_employee}")
 print(f"Employees with overtime: {overtime_employee_count}")
-
