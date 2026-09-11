@@ -1,45 +1,75 @@
 records = [
-    ("Ravi",   "Math",    78),
-    ("Anjali", "Math",    92),
-    ("Ravi",   "Science", 65),
-    ("Priya",  "Math",    55),
-    ("Anjali", "Science", 88),
-    ("Priya",  "Science", 40),
-    ("Ravi",   "English", 50),
-    ("Anjali", "English", 95),
-    ("Priya",  "English", 33),
+    ("Ravi",  "Math",    80),
+    ("Ravi",  "Science", 85),
+    ("Ravi",  "English", 90),
+    ("Priya", "Math",    25),
+    ("Priya", "Science", 30),
+    ("Priya", "English", 20),
+    ("Kumar", "Math",    10),
+    ("Kumar", "Science", 15),
+    ("Kumar", "English", 12),
 ]
-keys=("name","subject","marks")
-relist=[]
+reclist=[]
+keys=('name','subject','marks')
 for rec in records:
-  values=rec
-  redict=dict(zip(keys,values))
-  relist.append(redict)
-
-names=[]
-subjects=[]
-for re in relist:
-    s=re['subject']
-    n=re["name"]
-    if n not in names:
-        names.append(n)
-    if s not in subjects:
-        subjects.append(s)
-print("---Student Averages---")
-x=[]
-for na in names:
-    n=0
-    t=0
-    for re in relist:
-        if na == re["name"]:
-            t+=re["marks"]
-            n+=1
-            
-    avg= lambda x,y: x/y
-    average=round(avg(t,n),2)
+    values=rec
+    recdict=dict(zip(keys,values))
+    reclist.append(recdict)
     
-    x.append((na,average))
-x=sorted(x,key=lambda item:item[1],reverse=True)
-for xx in x:
-    print(f"{xx[0]:<8}:{xx[1]}")
-print(f"\nTop Scorer:{x[0][0]}\n")
+SUB=[]
+NAM=[]
+for rec in reclist:
+    na=rec['name']
+    su=rec['subject']
+    if su not in SUB:
+        SUB.append(su)
+    if na not in NAM:
+        NAM.append(na)
+def ca(t,n):
+    return t/n
+print("--- Student Averages ---")
+X=[]
+TM=0
+TP=''
+for NA in NAM:
+    t=0
+    n=0
+    for rec in reclist:
+        if NA == rec['name']:
+            t+=rec['marks']
+            n+=1
+    avg=ca(t,n)
+    average=round(avg,2)
+    if TM < average:
+        TM=average
+        TP=NA
+    X.append([NA,average])
+    X=sorted(X,key= lambda X:X[1],reverse='True')
+for x in X:
+    print(f"{x[0]:<8}:{x[1]}")
+print(f"\nTop Scorer:{TP}({TM})\n")
+ 
+print("--- Subject Averages ---")
+Y=[]
+LM=None
+LP=''
+for SU in SUB:
+    t=0
+    n=0
+    for rec in reclist:
+        if SU == rec['subject']:
+            t+=rec['marks']
+            n+=1
+    avg=ca(t,n)
+    average=round(avg,2)
+    if LM is None or LM > average:
+        LM=average
+        LP=SU
+    Y.append([SU,average])
+    Y=sorted(Y,key= lambda Y:Y[1],reverse='True')
+for y in Y:
+    print(f"{y[0]:<8}:{y[1]}")
+print(f"\nHardest Subject:{LP}({LM})\n")
+    
+#print("--- Failed Students (Average < 40) ---")
+
