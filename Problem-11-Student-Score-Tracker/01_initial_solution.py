@@ -1,15 +1,14 @@
 records = [
-    ("Ravi",   "Math",    78),
-    ("Anjali", "Math",    92),
-    ("Ravi",   "Science", 65),
-    ("Priya",  "Math",    55),
-    ("Anjali", "Science", 88),
-    ("Priya",  "Science", 40),
-    ("Ravi",   "English", 50),
-    ("Anjali", "English", 95),
-    ("Priya",  "English", 33),
+    ("Ravi",  "Math",    80),
+    ("Ravi",  "Science", 85),
+    ("Ravi",  "English", 90),
+    ("Priya", "Math",    25),
+    ("Priya", "Science", 30),
+    ("Priya", "English", 20),
+    ("Kumar", "Math",    10),
+    ("Kumar", "Science", 15),
+    ("Kumar", "English", 12),
 ]
-
 reclist=[]
 keys=('name','subject','marks')
 for rec in records:
@@ -75,8 +74,17 @@ Z=[]
 for x in X:
     if x[1] < 40:
         Z.append(x)
-        
-print("--- Failed Students (Average < 40) ---")
+U=[]
+for x in X:
+    if x[1] >= 40: 
+        U.append(x)
+print("\n--- Passed Students (Average >= 40) ---")
+if not U:
+    print("None")
+else:
+    for u in U:
+        print(f"{u[0]:<8}:{u[1]}")
+print("\n--- Failed Students (Average < 40) ---")
 if not Z:
     print("None")
 else:
